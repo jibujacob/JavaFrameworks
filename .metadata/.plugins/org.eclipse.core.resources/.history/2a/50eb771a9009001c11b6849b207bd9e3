@@ -1,0 +1,21 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+
+<html>
+
+<head>
+	<title>JJ Company Home Page</title>
+</head>
+
+<body>
+	<h2>JJ Company Home Page-Test</h2>
+	<hr>
+	
+	Welcome to the JJ company home page!
+	<hr>
+	
+	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
+	</form:form>
+
+</body>
+
+</html>

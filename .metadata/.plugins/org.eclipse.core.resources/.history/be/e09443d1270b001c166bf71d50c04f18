@@ -1,0 +1,5 @@
+package com.jj.springdemo.rest;
+
+public class StudentNotFounfException {
+
+}

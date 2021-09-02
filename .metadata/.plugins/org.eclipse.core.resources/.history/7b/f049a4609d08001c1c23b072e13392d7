@@ -1,0 +1,39 @@
+package com.jj.aopdemo.aspects;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+@Order(2)
+public class MyDemoLoggingAspect {
+	
+	//@Before("execution(public void add*())")
+	//@Before("execution(* com.jj.aopdemo.dao.*.*(..))")
+	@Before("com.jj.aopdemo.aspects.AopAspectExpressions.functionalfunctionsnogetternosetter()")
+	public void beforeAddAccoubtAdvice(JoinPoint theJoinPoint ) {
+		
+		System.out.println("\n=====>>> Executing @Before advice on method ");
+		
+		MethodSignature methodSig = (MethodSignature) theJoinPoint.getSignature();
+		
+		System.out.println("Method: "+methodSig);
+		
+		System.out.println("Parameters: "+methodSig.getParameterNames());
+		
+	}
+	
+	@AfterReturning(
+			pointcut="* com.jj.aopdemo.dao.AccountDAO.findAccounts(..)",
+			returning="return")
+	public void afterRetunrningfindAccount() {
+		
+	}
+	
+
+}

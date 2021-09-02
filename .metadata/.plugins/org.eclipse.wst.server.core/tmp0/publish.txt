@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Sep 01 19:40:33 IST 2021
+org.eclipse.jst.jee.server\:/binary\:/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/spring-mvc-demo/Webcontent/WEB-INF/lib/spring-web-5.3.8-sources.jar=WEB-INF/lib/spring-web-5.3.8-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/Users/jibujacob/.m2/repository/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar=WEB-INF/lib/spring-web-5.0.5.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/spring-mvc-demo/Webcontent/WEB-INF/lib/spring-web-5.3.8.jar=WEB-INF/lib/spring-web-5.3.8.jar

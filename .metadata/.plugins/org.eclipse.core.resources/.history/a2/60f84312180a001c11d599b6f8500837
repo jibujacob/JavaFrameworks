@@ -1,0 +1,24 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>  
+
+<html>
+
+<head>
+	<title>JJ Company Home Page</title>
+</head>
+
+<body>
+	<h2>JJ Company Home Page-Test</h2>
+	<hr>
+	<sec:authentication property="principal.username">  
+	<hr>
+	Welcome to the JJ company home page!
+	<hr>
+	
+	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
+		<input type="submit" value="Logout">
+	</form:form>
+
+</body>
+
+</html>

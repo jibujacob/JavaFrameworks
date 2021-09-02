@@ -1,0 +1,6 @@
+package com.jj.springsecurity.demo.controller;
+
+@Controller
+public class LoginController {
+
+}

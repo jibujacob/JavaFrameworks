@@ -1,0 +1,5 @@
+package com.jj.springlearning;
+
+public interface Coach {
+
+}

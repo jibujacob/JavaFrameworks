@@ -1,0 +1,53 @@
+package com.jj.aopdemo.aspects;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+@Order(2)
+public class MyDemoLoggingAspect {
+	
+	@Pointcut("execution(* com.jj.aopdemo.dao.*.*(..))")
+	public void forDAOPackages() {
+		
+	}
+	
+	@Pointcut("execution(* com.jj.aopdemo.dao.*.get*(..))")
+	public void getter() {
+		
+	}
+	
+	@Pointcut("execution(* com.jj.aopdemo.dao.*.set*(..))")
+	public void setter() {
+		
+	}
+	
+	@Pointcut("forDAOPackages() && !(getter()||setter())")
+	public void functionalfunctionsnogetternosetter() {
+		
+	}
+	
+	//@Before("execution(public void add*())")
+	//@Before("execution(* com.jj.aopdemo.dao.*.*(..))")
+	@Before("functionalfunctionsnogetternosetter()")
+	public void beforeAddAccoubtAdvice() {
+		System.out.println("\n=====>>> Executing @Before advice on method ");
+	}
+	
+	
+	@Before("functionalfunctionsnogetternosetter()")
+	public void performAnalytics() {
+		System.out.println("\n=====>>> Executing @Before advice on methods for analytics");
+	}
+	
+	@Before("functionalfunctionsnogetternosetter()")
+	public void lotToCloud() {
+		System.out.println("\n=====>>> Executing @Before advice on methods for cloud log");
+	}
+	
+
+}

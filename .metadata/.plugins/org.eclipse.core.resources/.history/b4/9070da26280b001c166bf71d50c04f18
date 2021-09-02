@@ -1,0 +1,21 @@
+package com.jj.springdemo.rest;
+
+public class StudentNotFounfException extends RuntimeException{
+
+	public StudentNotFounfException(String message, Throwable cause) {
+		super(message, cause);
+		
+	}
+
+	public StudentNotFounfException(String message) {
+		super(message);
+		
+	}
+
+	public StudentNotFounfException(Throwable cause) {
+		super(cause);
+		
+	}
+
+	
+}
