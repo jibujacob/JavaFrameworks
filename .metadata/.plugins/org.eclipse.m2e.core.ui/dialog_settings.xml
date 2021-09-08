@@ -80,6 +80,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/spring-crm-rest-demo"/>
 			<item value="/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/spring-rest-demo"/>
 			<item value="/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/jackson-databinding-json-demo"/>
 			<item value="/Users/jibujacob/Documents/Development_Workspace/SpringFrameworkProjects/spring-security-demo"/>

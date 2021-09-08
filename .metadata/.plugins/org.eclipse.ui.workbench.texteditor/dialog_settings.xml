@@ -6,12 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="myLogger.info"/>
+		<item key="selection" value="CustomerDAO"/>
 		<list key="findhistory">
+			<item value="luv2code"/>
+			<item value="com.luv2code.springdemo"/>
 			<item value="System.out.println"/>
 			<item value="getCustomer"/>
 		</list>
 		<list key="replacehistory">
+			<item value="jj"/>
 			<item value="myLogger.info"/>
 		</list>
 	</section>
